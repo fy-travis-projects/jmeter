@@ -9,3 +9,5 @@ before_install:
 addons:
   ssh_known_hosts: 198e3e504d5ee164.natapp.cc
 install: true
+script:
+  - mvn -Drat.skip=true -DskipTests=true install
